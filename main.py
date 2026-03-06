@@ -309,7 +309,7 @@ def mostrar_estadisticas_iniciales(tienda: 'TiendaMuebles') -> None:
     """
     print("\n📊 Estadísticas iniciales de la tienda:")
     
-    # TODO: Obtener y mostrar estadísticas
+    # Obtener y mostrar estadísticas
     stats = tienda.obtener_estadisticas()
     
     print(f"  📦 Total de muebles: {stats['total_muebles']}")

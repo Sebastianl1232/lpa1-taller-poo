@@ -1,4 +1,4 @@
-# LPA1 Taller1: Tienda de Muebles
+# LPA1 Taller 1: Tienda de Muebles
 
 Este taller está diseñado para introducir a los estudiantes en los conceptos de la Programación Orientada a Objetos (OOP) utilizando Python. Construiremos una tienda de muebles que implementa una jerarquía de clases aplicando los conceptos vistos en clase.
 
@@ -49,21 +49,21 @@ Cuenta: [@tu_cuenta_github]
 
 ### 0. Preparación
 
-* Clona o descarga el proyecto
+* Clonar el proyecto
 
     ```bash
-    git clone https://github.com/UR-CC/lpa1-taller-poo.git
+    git clone https://github.com/clubdecomputacion/lpa1-taller-poo.git
     cd lpa1-taller-poo
     ```
 
-* Crea un entorno virtual
+* Crear y activar un entorno virtual
 
     ```bash
     python -m venv venv
-    source venv/bin/activate  # Linux/Mac
+    source venv/bin/activate  # Linux/WSL/Macos
     ```
 
-* Instala las dependencias
+* Instalar las dependencias
 
     ```bash
     pip install -r requirements.txt
@@ -158,19 +158,19 @@ Cuenta: [@tu_cuenta_github]
 - Ejecutar todas las pruebas
 
     ```bash
-    python -m pytest tests/ -v
+    python3 -m pytest -v
     ```
 
-- Ejecutar pruebas con coverage
+- Ejecutar pruebas con medición de cobertura (coverage)
 
     ```bash
-    python -m pytest tests/ --cov=models --cov=services
+    python3 -m pytest --cov=models --cov=services
     ```
 
 ## Ejecutar la Aplicación
 
 ```bash
-python main.py
+python3 main.py
 ```
 
 ## Entregables
