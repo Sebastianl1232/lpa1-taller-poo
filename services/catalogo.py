@@ -6,11 +6,11 @@ filtro, estadísticas y carga masiva en la tienda.
 
 from typing import List, Dict, Union, TYPE_CHECKING
 
-from ..models.mueble import Mueble
-from ..models.composicion.comedor import Comedor
+from models.mueble import Mueble
+from models.composicion.comedor import Comedor
 
 if TYPE_CHECKING:
-	from .tienda import TiendaMuebles
+	from services.tienda import TiendaMuebles
 
 
 CatalogoItem = Union[Mueble, Comedor]
