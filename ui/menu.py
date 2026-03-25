@@ -4,11 +4,15 @@ Interfaz de usuario usando Rich para crear un menú interactivo y atractivo.
 
 # TODO: Importar las librerías necesarias
 from rich.console import Console
-from typing import List, Optional
+from rich.table import Table
+from rich.panel import Panel
+from rich.prompt import Prompt, IntPrompt, Confirm
+from rich.text import Text
+from typing import List
 import time
 
-from ..services.tienda import TiendaMuebles
-from ..models.mueble import Mueble
+from services.tienda import TiendaMuebles
+from models.mueble import Mueble
 # TODO: Importar los servicios y modelos
 
 
@@ -71,7 +75,7 @@ class MenuTienda:
                     mueble.color,
                     precio
                 )
-            except Exception as e:
+            except Exception:
                 table.add_row(str(i), mueble.nombre, "Error", "-", "-", "Error")
         
         self.console.print(table)
@@ -190,7 +194,7 @@ class MenuTienda:
             mueble_seleccionado = muebles[indice - 1]
             
             # Mostrar detalles del mueble
-            self.console.print(f"\n[green]Mueble seleccionado:[/green]")
+            self.console.print("\n[green]Mueble seleccionado:[/green]")
             self.console.print(mueble_seleccionado.obtener_descripcion())
             
             confirmar = Confirm.ask("\n¿Confirmar la venta?")
