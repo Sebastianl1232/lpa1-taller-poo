@@ -114,8 +114,7 @@ class TiendaMuebles:
             if nombre_lower in mueble.nombre.lower():
                 resultados.append(mueble)
         
-        # return resultados
-        pass
+        return resultados
     
     def filtrar_por_precio(self, precio_min: float = 0, precio_max: float = float('inf')) -> List['Mueble']:
         """
@@ -141,8 +140,7 @@ class TiendaMuebles:
             except Exception:
                 continue  # Saltar muebles con errores de precio
         
-        # return resultados
-        pass
+        return resultados
     
     def filtrar_por_material(self, material: str) -> List['Mueble']:
         """
@@ -165,8 +163,7 @@ class TiendaMuebles:
             if mueble.material.lower() == material_lower:
                 resultados.append(mueble)
         
-        # return resultados
-        pass
+        return resultados
     
     def obtener_muebles_por_tipo(self, tipo_clase: type) -> List['Mueble']:
         """

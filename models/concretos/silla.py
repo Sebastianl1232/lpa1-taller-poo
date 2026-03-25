@@ -5,7 +5,7 @@ Implementa un mueble de asiento específico para una persona.
 
 # TODO: Importar la clase padre Asiento
 # from ..categorias.asientos import Asiento
-from categorias.asientos import Asiento
+from ..categorias.asientos import Asiento
 
 
 class Silla(Asiento):
