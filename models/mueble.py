@@ -45,17 +45,6 @@ class Mueble(ABC):
     # def nombre(self) -> str:
     #     """Getter para el nombre del mueble."""
     #     return self._nombre
-    
-    # TODO: Implementar los setters para cada atributo donde sea necesario
-    # Usa el decorador @nombre.setter para crear setters
-    # Incluye validaciones básicas (ej: precio no puede ser negativo)
-    # Ejemplo:
-    # @nombre.setter
-    # def nombre(self, value: str) -> None:
-    #     """Setter para el nombre con validación."""
-    #     if not value or not value.strip():
-    #         raise ValueError("El nombre no puede estar vacío")
-    #     self._nombre = value.strip()
     @property
     def nombre(self) -> str:
         """Getter para el nombre del mueble."""
@@ -68,6 +57,17 @@ class Mueble(ABC):
             raise ValueError("El nombre no puede estar vacío")
         self._nombre = value.strip()
 
+    # TODO: Implementar los setters para cada atributo donde sea necesario
+    # Usa el decorador @nombre.setter para crear setters
+    # Incluye validaciones básicas (ej: precio no puede ser negativo)
+    # Ejemplo:
+    # @nombre.setter
+    # def nombre(self, value: str) -> None:
+    #     """Setter para el nombre con validación."""
+    #     if not value or not value.strip():
+    #         raise ValueError("El nombre no puede estar vacío")
+    #     self._nombre = value.strip()
+    
     @property
     def material(self) -> str:
         """Getter para el material del mueble."""
